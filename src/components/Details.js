@@ -8,8 +8,8 @@ const Details = (props) => {
   // Watch the video to see how this works in the app.
 
   const renderSomething = () => {
-    if (props.host != 'none'){
-      return <HostInfo host={props.host} setActive={props.setActive} setArea={props.setArea}/>
+    if (props.host !== 'none'){
+      return <HostInfo host={props.host} data={props.data} setActive={props.setActive} setArea={props.setArea} logError={props.logError}/>
     } else {
       return <Image size='medium' src= {Images.westworldLogo}/>
     }

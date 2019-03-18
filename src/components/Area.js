@@ -10,7 +10,7 @@ const Area = (props) => (
 
       <h3 className='labels'>{props.area.name}</h3>
 
-      {<HostList hosts={props.data.hosts.filter(host=>host.active !== false && host.area == props.area.name)}/>}
+      {<HostList hosts={props.data.hosts.filter(host=>host.active !== false && host.area === props.area.name)} selectHost={props.selectHost}/>}
 
     </div>
 
